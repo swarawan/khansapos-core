@@ -1,11 +1,11 @@
-apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 publishing {
     publications {
         maven(MavenPublication) {
             setGroupId 'com.github.swarawan'
             artifactId 'khansapos-core'
-            version "0.0.4"
+            version "0.0.5"
             from components.java
 
             artifact sourceJar {
