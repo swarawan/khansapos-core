@@ -5,7 +5,7 @@ publishing {
         maven(MavenPublication) {
             setGroupId 'com.github.swarawan'
             artifactId 'khansapos-core'
-            version "0.0.5"
+            version "0.0.6"
             from components.java
 
             artifact sourceJar
