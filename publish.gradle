@@ -1,0 +1,17 @@
+apply plugin: 'maven-publish'
+apply plugin: 'com.github.dcendents.android-maven'
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            setGroupId 'com.github.swarawan'
+            artifactId 'khansapos-core'
+            version "0.0.3"
+            from components.java
+
+            artifact sourceJar {
+                classifier "sources"
+            }
+        }
+    }
+}
