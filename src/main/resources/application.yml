@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://localhost:3306/khansapos
+    username: root
+    password:
+  messages:
+    basename: message/messages
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        jdbc:
+          lob:
+          non_contextual_creation: true
+
+security:
+  signing-key: J7vRQCe6G3qmDSKqbASj65NLLMq6Md785kXzFCkJK56ydHcqFsGdyrRXqzhs7yzR
+  validityInMs: 43200000
